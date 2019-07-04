@@ -1,0 +1,25 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+
+/* selector de etiqueta header, section,*/
+
+header {
+    background: red;
+    padding: 0%;
+    margin: 0%
+}
+
+
+/* selector descendente */
+
+body header div nav ol li a {}
+
+
+/* selector de clase . */
+
+
+/* selector de id: Este es para estilos únicos #*/
