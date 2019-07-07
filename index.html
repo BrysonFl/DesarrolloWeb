@@ -39,41 +39,43 @@
         </h1>
         <img src="./images/hero.jpg" alt="Imagen principal del sitio" width="500" height="300">
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3>Platzi Video</h3>
-            <h6>React Native / React</h6>
+        <article class="project">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
         </article>
-        <p><small><strong>Fecha: </strong>01/07/2019</small></p>
-        <p><small><strong>Puedes verlo en: </strong>www.platzi.com/native</small></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus cum tempore error adipisci
+        <p class="project-date"><small><strong>Fecha: </strong>01/07/2019</small></p>
+        <p class="project-url"><small><strong>Puedes verlo en: </strong>www.platzi.com/native</small></p>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus cum tempore error adipisci
             deleniti, repudiandae minima laborum ratione ab reiciendis maxime enim nemo excepturi reprehenderit modi a
             pariatur! In.</p>
-        <img src="./images/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500">
-    </section>
-    <section id="experiencia">
-        <h2>Más Sobre mi Experiencia</h2>
-        <article>
-            <figure>
-                <img src="./images/platzi-conf.jpg" alt="" width="500" height="300">
+            <figure class="project-imgContainer">
+                <img class="project-img" src="./images/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500">
             </figure>
-            <h3>Platzi Conf México 2019</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam debitis consectetur dicta, tempore
+    </section>
+    <section id="eventos">
+        <h2>Más Sobre mi Experiencia</h2>
+        <article class="event">
+            <figure class="event-imgContainer">
+                <img class="event-img" src="./images/platzi-conf.jpg" alt="" width="500" height="300">
+            </figure>
+            <h3 class="event-title">Platzi Conf México 2019</h3>
+            <p class="event-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam debitis consectetur dicta, tempore
                 quidem optio repellat, aliquid excepturi aperiam nesciunt asperiores nisi, beatae fugit! Quisquam
                 quaerat vel ipsa. Placeat, facilis.</p>
-            <a href="https://www.youtube.com/watch?v=BqZK52OwV2g" target="_blank">Ver platica</a>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BqZK52OwV2g" target="_blank">Ver platica</a>
         </article>
     </section>
-    <section id="contacto">
-        <form action="/suscripcion/">
+    <section id="contacto" class="contact">
+        <form action="/suscripcion/" class="form-email">
             <h3>Creamos algo juntos?</h3>
             <input type="datetime" placeholder="Déjame tu email">
             <!--value="@gmail.com"-->
             <button>Enviar</button>
         </form>
     </section>
-    <footer>Footer</footer>
+    <footer class="footer">Footer</footer>
 </body>
 
 </html>
