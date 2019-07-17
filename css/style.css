@@ -313,3 +313,22 @@ h2 {
 }
 
 /* selector de id: Este es para estilos únicos #*/
+
+/*Segunda forma de agregar media queris*/
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}
