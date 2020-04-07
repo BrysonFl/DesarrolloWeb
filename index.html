@@ -19,6 +19,346 @@
         }
     </style>
     -->
+
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?ku05pa');
+            src: url('fonts/icomoon.eot?ku05pa#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?ku05pa') format('truetype'), url('fonts/icomoon.woff?ku05pa') format('woff'), url('fonts/icomoon.svg?ku05pa#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal
+        }
+
+        [class^="icon-"] {
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .icon-menu:before {
+            content: "\e9bd"
+        }
+
+        body {
+            font-family: 'Source Sans Pro', system-ui;
+            margin: 0%
+        }
+
+        h1,
+        h2,
+        h3,
+        h6 {
+            font-family: 'Fjalla One', system-ui;
+            font-weight: 400;
+            letter-spacing: -.2px
+        }
+
+        h1 {
+            max-width: 500px;
+            font-size: 40px;
+            line-height: 1.5em;
+            color: #FFF;
+            margin: 0px 0px 0px 0px
+        }
+
+        .header {
+            background-color: #1d252c;
+            color: white;
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            flex-wrap: wrap
+        }
+
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        figure {
+            margin: 0
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none
+        }
+
+        .menu {
+            height: inherit
+        }
+
+        .header ol {
+            display: flex;
+            height: inherit
+        }
+
+        .header ol li {
+            height: inherit
+        }
+
+        .header a {
+            display: flex;
+            align-items: center;
+            height: inherit;
+            padding: 0 10px
+        }
+
+        h1 strong {
+            color: #026FFF
+        }
+
+        h2 {
+            color: #026FFF;
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro', system-ui;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 40px
+        }
+
+        .logo {
+            margin: 0%
+        }
+
+        .hero {
+            height: 300px;
+            background-color: #1b2127;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .hero-img {
+            object-fit: cover
+        }
+
+        .portfolio {
+            padding: 20px;
+            background-color: #FAFAFA
+        }
+
+        .project {
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+            background-color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .project-container {
+            border: 0%;
+            width: 50%
+        }
+
+        .project-title {
+            font-size: 30px;
+            margin: 10px 0
+        }
+
+        .project-course,
+        .project-date,
+        .project-url {
+            margin: 10px 0
+        }
+
+        .project-description {
+            font-size: 20px
+        }
+
+        .project strong {
+            font-family: 'Fjalla One', system-ui
+        }
+
+        .project-imgContainer {
+            width: 50%
+        }
+
+        .project-imgContainer img {
+            max-width: 100%
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            flex: 1;
+            margin: 0 auto;
+            display: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            height: inherit;
+            flex-wrap: inherit
+        }
+
+        .burger-buttom {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .1);
+            display: none;
+            line-height: 40px;
+            text-align: center;
+            position: fixed;
+            z-index: 3;
+            left: 5px;
+            top: 5px;
+            color: white
+        }
+
+        @media screen and (max-width:1023px) {
+            .wrapper {
+                padding: 0 1em
+            }
+
+            .hero {
+                height: auto;
+                position: relative;
+                overflow: hidden;
+                padding: 2em
+            }
+
+            .hero-img {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%
+            }
+
+            .hero h1 {
+                font-size: 2em;
+                z-index: 2
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            h2 {
+                font-size: 1.2em;
+                margin: .5em 0
+            }
+
+            .header {
+                display: block;
+                height: auto
+            }
+
+            .header ol {
+                display: block
+            }
+
+            .header ol li {
+                height: 50px
+            }
+
+            .header a {
+                justify-content: center;
+                height: 40px;
+                font-size: 2em;
+                text-decoration: underline;
+                margin-bottom: .5em
+            }
+
+            .header .logo {
+                text-align: center
+            }
+
+            .project {
+                display: block
+            }
+
+            .project-imgContainer {
+                width: auto;
+                text-align: center
+            }
+
+            .project-container {
+                width: auto
+            }
+
+            .project-course,
+            .project-date {
+                margin: .4em 0
+            }
+
+            .project-title {
+                font-size: 1.5em;
+                margin-bottom: .3em
+            }
+
+            .project-url {
+                font-size: 1em
+            }
+
+            .project-course {
+                font-size: .7em
+            }
+
+            .project-date {
+                font-size: 1em
+            }
+
+            .project-description {
+                font-size: 1em
+            }
+
+            .burger-buttom {
+                display: block;
+                z-index: 5
+            }
+
+            .menu {
+                position: fixed;
+                background-color: rgba(5, 111, 255, .8);
+                z-index: 4;
+                top: 0;
+                left: -100vw;
+                width: 100vw;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .project-container {
+                font-size: 14px
+            }
+
+            .hero h1 {
+                font-size: 1.5em
+            }
+
+            .wrapper {
+                padding: 0 .5em
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .hero h1 {
+                font-size: 1em
+            }
+
+            .hero {
+                padding: 2em 1em
+            }
+        }
+    </style>
     <script src="js/index.js"></script>
     <title>Hola soy Bryson Florez</title>
 </head>
@@ -217,23 +557,25 @@
 
         ipad.addListener(validation);
 
-        function validation(event){
-            if(event.matches){
+        function validation(event) {
+            if (event.matches) {
                 burgerButton.addEventListener('click', hideShow);
-            }else{
+            } else {
                 burgerButton.removeEventListener('click', hideShow);
             }
         }
 
         function hideShow() {
-            if(menu.classList.contains('is-active')){
+            if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
             } else {
                 menu.classList.add('is-active');
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Open+Sans|Slabo+27px|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Open+Sans|Slabo+27px|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
 </body>
 
 </html>
